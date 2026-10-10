@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- 柔和阴影 -->
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3748" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2D3748" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- 文字渐变 -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B3A4A"/>
+      <stop offset="100%" stop-color="#4A6178"/>
+    </linearGradient>
+
+    <!-- 颈圈金色渐变 -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+
+    <!-- 阴影滤镜 -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#2D3748" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- 纯白背景 -->
+
+  <!-- 顶部标题文字 SHENZHEN -->
+  <g text-anchor="middle">
+    <text x="400" y="125" 
+          fill="url(#textGradient)" 
+          font-family="'Montserrat', 'Arial Black', -apple-system, sans-serif" 
+          font-size="64" 
+          font-weight="900" 
+          letter-spacing="10" 
+          opacity="0.95">SHENZHEN</text>
+    
+    <!-- 装饰线条与小点 -->
+    <line x1="310" y1="150" x2="490" y2="150" stroke="#E8833A" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="400" cy="150" r="4" fill="#E8833A"/>
+  </g>
+
+  <!-- 三花猫容器 (动作：右前爪高高抬起招手/打招呼) -->
+  <g transform="translate(0, 30)" filter="url(#softShadow)">
+    
+    <!-- 地面阴影 -->
+    <ellipse cx="400" cy="660" rx="200" ry="22" fill="url(#shadow)"/>
+
+    <!-- 尾巴 (兴奋高高竖起，尾尖微微弯曲) -->
+    <path d="M 520 580 C 580 520, 620 400, 590 320 C 575 280, 535 300, 550 335 C 565 370, 540 480, 480 560" 
+          fill="none" 
+          stroke="#FFF8F0" 
+          stroke-width="34" 
+          stroke-linecap="round"/>
+    <!-- 尾巴斑块 -->
+    <path d="M 550 480 C 580 430, 600 370, 580 325" fill="none" stroke="#2A2E33" stroke-width="32" stroke-linecap="round"/>
+    <path d="M 575 315 C 560 290, 540 305, 550 335" fill="none" stroke="#E8833A" stroke-width="32" stroke-linecap="round"/>
+
+    <!-- 后腿与身体蹲坐底座 -->
+    <!-- 左后腿（橘色斑块） -->
+    <path d="M 230 580 C 210 520, 250 440, 310 430 C 370 420, 400 480, 400 550 C 320 560, 250 610, 230 580 Z" fill="#E8833A"/>
+    <!-- 右后腿（黑灰色斑块） -->
+    <path d="M 470 580 C 490 520, 450 440, 390 430 C 330 420, 300 480, 300 550 C 380 560, 450 610, 470 580 Z" fill="#2A2E33"/>
+
+    <!-- 身体主干（白色为主） -->
+    <path d="M 280 380 C 280 290, 520 290, 520 380 C 520 500, 500 630, 400 630 C 300 630, 280 500, 280 380 Z" fill="#FFF8F0"/>
+    
+    <!-- 侧身斑块 -->
+    <path d="M 460 380 C 520 410, 510 520, 470 560 C 440 520, 430 430, 460 380 Z" fill="#2A2E33"/>
+    <path d="M 290 400 C 275 460, 300 530, 330 560 C 310 510, 310 440, 290 400 Z" fill="#E8833A"/>
+
+    <!-- 左前腿 (稳稳踩地) -->
+    <path d="M 320 460 L 320 630 C 320 645, 345 645, 350 630 L 360 480 Z" fill="#FFF8F0"/>
+    <ellipse cx="335" cy="638" rx="20" ry="12" fill="#FFFFFF"/>
+
+    <!-- 右前腿 (抬起招手/打招呼) -->
+    <path d="M 450 460 Q 520 420 540 340 C 545 320, 515 310, 495 330 Q 460 390 430 480 Z" fill="#FFF8F0"/>
+    <!-- 抬起的肉垫粉脚掌 -->
+    <g transform="translate(525, 315) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="18" ry="14" fill="#FFFFFF"/>
+      <!-- 粉色主肉垫 -->
+      <ellipse cx="0" cy="2" rx="9" ry="7" fill="#FF9EAA"/>
+      <!-- 小趾垫 -->
+      <circle cx="-9" cy="-6" r="3.5" fill="#FF9EAA"/>
+      <circle cx="-3" cy="-10" r="3.5" fill="#FF9EAA"/>
+      <circle cx="4" cy="-10" r="3.5" fill="#FF9EAA"/>
+      <circle cx="9" cy="-6" r="3.5" fill="#FF9EAA"/>
+    </g>
+
+    <!-- 红色项圈与小金铃铛 -->
+    <path d="M 320 365 Q 400 395 480 365" fill="none" stroke="#C0392B" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="400" cy="390" r="14" fill="url(#goldGradient)"/>
+    <circle cx="400" cy="393" r="3" fill="#8B572A"/>
+
+    <!-- 猫头部 (圆圆大头) -->
+    <g transform="translate(0, -10)">
+      
+      <!-- 左耳朵 (橘色) -->
+      <path d="M 270 240 L 210 110 C 200 85, 230 80, 255 105 L 325 190 Z" fill="#E8833A"/>
+      <path d="M 260 230 L 225 125 C 220 110, 235 105, 250 120 L 310 190 Z" fill="#FFB7B2" opacity="0.85"/>
+      
+      <!-- 右耳朵 (黑灰色) -->
+      <path d="M 530 240 L 590 110 C 600 85, 570 80, 545 105 L 475 190 Z" fill="#2A2E33"/>
+      <path d="M 540 230 L 575 125 C 580 110, 565 105, 550 120 L 490 190 Z" fill="#FFB7B2" opacity="0.85"/>
+
+      <!-- 猫脸底色 (白色) -->
+      <ellipse cx="400" cy="260" rx="135" ry="105" fill="#FFF8F0"/>
+
+      <!-- 脸部三花花纹块 -->
+      <path d="M 270 230 C 260 170, 330 160, 350 210 C 320 250, 280 260, 270 230 Z" fill="#2A2E33"/>
+      <path d="M 530 230 C 540 170, 470 160, 450 210 C 480 250, 520 260, 530 230 Z" fill="#E8833A"/>
+
+      <!-- 睁开的大眼睛 (灵动开心的眼神) -->
+      <!-- 左眼 -->
+      <ellipse cx="335" cy="240" rx="18" ry="22" fill="#2A2E33"/>
+      <circle cx="330" cy="232" r="7" fill="#FFFFFF"/>
+      <circle cx="342" cy="248" r="3" fill="#FFFFFF"/>
+      
+      <!-- 右眼 -->
+      <ellipse cx="465" cy="240" rx="18" ry="22" fill="#2A2E33"/>
+      <circle cx="460" cy="232" r="7" fill="#FFFFFF"/>
+      <circle cx="472" cy="248" r="3" fill="#FFFFFF"/>
+
+      <!-- 腮红 -->
+      <ellipse cx="305" cy="265" rx="18" ry="10" fill="#FF8A8A" opacity="0.45"/>
+      <ellipse cx="495" cy="265" rx="18" ry="10" fill="#FF8A8A" opacity="0.45"/>
+
+      <!-- 粉红小鼻子 -->
+      <polygon points="392,250 408,250 400,258" fill="#FF9EAA"/>
+
+      <!-- 开心微张的猫咪三叉嘴 (ω 造型) -->
+      <path d="M 375 268 Q 388 280 400 268 Q 412 280 425 268" fill="none" stroke="#2A2E33" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 388 275 C 388 290, 412 290, 412 275 Z" fill="#FF758C"/>
+
+      <!-- 胡须 -->
+      <g stroke="#2A2E33" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+        <path d="M 305 265 L 205 245"/>
+        <path d="M 300 275 L 195 275"/>
+        <path d="M 305 285 L 210 305"/>
+        <path d="M 495 265 L 595 245"/>
+        <path d="M 500 275 L 605 275"/>
+        <path d="M 495 285 L 590 305"/>
+      </g>
+    </g>
+
+    <!-- 打招呼的动态飘逸小线条 -->
+    <g stroke="#E8833A" stroke-width="3" stroke-linecap="round" opacity="0.6" fill="none">
+      <path d="M 565 290 C 575 285, 580 275, 575 265"/>
+      <path d="M 580 310 C 595 305, 600 295, 595 285"/>
+    </g>
+  </g>
+</svg>

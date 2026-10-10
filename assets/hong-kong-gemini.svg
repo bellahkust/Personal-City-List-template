@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- 柔和阴影 -->
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3748" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2D3748" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- 文字渐变 -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B3A4A"/>
+      <stop offset="100%" stop-color="#4A6178"/>
+    </linearGradient>
+
+    <!-- 颈圈金色渐变 -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+
+    <!-- 整体阴影滤镜 -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#2D3748" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- 纯白背景 -->
+
+  <!-- 顶部标题文字 Hong Kong -->
+  <g text-anchor="middle">
+    <text x="400" y="125" 
+          fill="url(#textGradient)" 
+          font-family="'Montserrat', 'Arial Black', -apple-system, sans-serif" 
+          font-size="64" 
+          font-weight="900" 
+          letter-spacing="10" 
+          opacity="0.95">HONG KONG</text>
+    
+    <!-- 装饰线条与小红点 -->
+    <line x1="320" y1="150" x2="480" y2="150" stroke="#E8833A" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="400" cy="150" r="4" fill="#E8833A"/>
+  </g>
+
+  <!-- 三花猫容器 (一只猫，打哈欠姿势) -->
+  <g transform="translate(0, 30)" filter="url(#softShadow)">
+    
+    <!-- 地面阴影 -->
+    <ellipse cx="400" cy="660" rx="210" ry="22" fill="url(#shadow)"/>
+
+    <!-- 尾巴（黑橙相间的优雅卷曲尾巴） -->
+    <path d="M 520 600 C 610 600, 660 530, 630 460 C 610 410, 560 440, 575 480 C 590 520, 580 540, 520 570" 
+          fill="none" 
+          stroke="#FFF8F0" 
+          stroke-width="36" 
+          stroke-linecap="round"/>
+    <!-- 尾巴上的三花斑块 -->
+    <path d="M 540 595 C 590 595, 635 550, 620 490" fill="none" stroke="#2A2E33" stroke-width="34" stroke-linecap="round"/>
+    <path d="M 615 470 C 600 440, 570 450, 575 480" fill="none" stroke="#E8833A" stroke-width="34" stroke-linecap="round"/>
+
+    <!-- 后腿与下半身 -->
+    <!-- 左后腿（橘色斑块） -->
+    <path d="M 230 580 C 210 520, 250 440, 310 430 C 370 420, 400 480, 400 550 C 320 560, 250 610, 230 580 Z" 
+          fill="#E8833A"/>
+    <!-- 右后腿（黑灰色斑块） -->
+    <path d="M 470 580 C 490 520, 450 440, 390 430 C 330 420, 300 480, 300 550 C 380 560, 450 610, 470 580 Z" 
+          fill="#2A2E33"/>
+
+    <!-- 身体主干（白色为主底色） -->
+    <path d="M 280 380 C 280 290, 520 290, 520 380 C 520 500, 500 630, 400 630 C 300 630, 280 500, 280 380 Z" 
+          fill="#FFF8F0"/>
+    
+    <!-- 侧身黑斑 -->
+    <path d="M 460 380 C 520 410, 510 520, 470 560 C 440 520, 430 430, 460 380 Z" fill="#2A2E33"/>
+    <!-- 侧身橘斑 -->
+    <path d="M 290 400 C 275 460, 300 530, 330 560 C 310 510, 310 440, 290 400 Z" fill="#E8833A"/>
+
+    <!-- 前肢伸展伸懒腰/撑地 -->
+    <!-- 左前腿（白脚掌） -->
+    <path d="M 315 480 L 255 635 C 250 647, 265 655, 280 650 L 345 520 Z" fill="#FFF8F0"/>
+    <ellipse cx="260" cy="643" rx="20" ry="12" fill="#FFFFFF" transform="rotate(-10 260 643)"/>
+    <!-- 右前腿（白脚掌） -->
+    <path d="M 485 480 L 545 635 C 550 647, 535 655, 520 650 L 455 520 Z" fill="#FFF8F0"/>
+    <ellipse cx="540" cy="643" rx="20" ry="12" fill="#FFFFFF" transform="rotate(10 540 643)"/>
+
+    <!-- 红色项圈与小金铃铛 -->
+    <path d="M 320 365 Q 400 395 480 365" fill="none" stroke="#C0392B" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="400" cy="390" r="14" fill="url(#goldGradient)"/>
+    <circle cx="400" cy="393" r="3" fill="#8B572A"/>
+
+    <!-- 猫头部 (大头可爱比例) -->
+    <g transform="translate(0, -10)">
+      
+      <!-- 左耳朵 (橘色) -->
+      <path d="M 270 240 L 210 110 C 200 85, 230 80, 255 105 L 325 190 Z" fill="#E8833A"/>
+      <path d="M 260 230 L 225 125 C 220 110, 235 105, 250 120 L 310 190 Z" fill="#FFB7B2" opacity="0.85"/>
+      
+      <!-- 右耳朵 (黑灰色) -->
+      <path d="M 530 240 L 590 110 C 600 85, 570 80, 545 105 L 475 190 Z" fill="#2A2E33"/>
+      <path d="M 540 230 L 575 125 C 580 110, 565 105, 550 120 L 490 190 Z" fill="#FFB7B2" opacity="0.85"/>
+
+      <!-- 猫脸底色 (白色) -->
+      <ellipse cx="400" cy="260" rx="135" ry="105" fill="#FFF8F0"/>
+
+      <!-- 脸部三花花纹块 -->
+      <!-- 左脸上黑斑 -->
+      <path d="M 270 230 C 260 170, 330 160, 350 210 C 320 250, 280 260, 270 230 Z" fill="#2A2E33"/>
+      <!-- 右脸上橘斑 -->
+      <path d="M 530 230 C 540 170, 470 160, 450 210 C 480 250, 520 260, 530 230 Z" fill="#E8833A"/>
+
+      <!-- 眯缝/打哈欠挤压眼 (幸福的 > < 眯眯眼) -->
+      <!-- 左眼 -->
+      <path d="M 310 235 Q 335 215 355 240" fill="none" stroke="#2A2E33" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 315 247 Q 335 233 355 247" fill="none" stroke="#2A2E33" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+      <!-- 右眼 -->
+      <path d="M 490 235 Q 465 215 445 240" fill="none" stroke="#2A2E33" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 485 247 Q 465 233 445 247" fill="none" stroke="#2A2E33" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+
+      <!-- 萌萌红晕 -->
+      <ellipse cx="305" cy="265" rx="18" ry="10" fill="#FF8A8A" opacity="0.45"/>
+      <ellipse cx="495" cy="265" rx="18" ry="10" fill="#FF8A8A" opacity="0.45"/>
+
+      <!-- 粉红小鼻子 -->
+      <polygon points="392,248 408,248 400,256" fill="#FF9EAA"/>
+
+      <!-- 大打哈欠张开的嘴巴 -->
+      <path d="M 355 270 C 340 275, 340 355, 400 355 C 460 355, 460 270, 445 270 C 415 260, 385 260, 355 270 Z" 
+            fill="#6B1D2F"/>
+      <!-- 舌头 -->
+      <path d="M 350 310 C 360 350, 440 350, 450 310 C 440 330, 360 330, 350 310 Z" fill="#FF758C"/>
+      <path d="M 370 330 C 390 352, 410 352, 430 330 C 415 345, 385 345, 370 330 Z" fill="#FF9EAA"/>
+
+      <!-- 小虎牙 -->
+      <polygon points="365,268 372,280 377,269" fill="#FFFFFF"/>
+      <polygon points="435,268 428,280 423,269" fill="#FFFFFF"/>
+
+      <!-- 猫胡须 -->
+      <g stroke="#2A2E33" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+        <path d="M 305 270 L 205 250"/>
+        <path d="M 300 280 L 195 280"/>
+        <path d="M 305 290 L 210 310"/>
+        <path d="M 495 270 L 595 250"/>
+        <path d="M 500 280 L 605 280"/>
+        <path d="M 495 290 L 590 310"/>
+      </g>
+    </g>
+
+    <!-- 打哈欠 Zzz 符号 -->
+    <g fill="#A0AEC0" font-family="Arial, sans-serif" font-weight="bold" opacity="0.85">
+      <text x="540" y="170" font-size="34" transform="rotate(12 540 170)">Z</text>
+      <text x="575" y="130" font-size="26" transform="rotate(18 575 130)">z</text>
+      <text x="600" y="100" font-size="20" transform="rotate(8 600 100)">z</text>
+    </g>
+
+    <!-- 打哈欠眼角小水滴 -->
+    <path d="M 295 240 C 290 240, 285 247, 285 252 C 285 257, 295 262, 295 262 C 295 262, 305 257, 305 252 C 305 247, 300 240, 295 240 Z" 
+          fill="#76E4F7" opacity="0.8"/>
+  </g>
+</svg>

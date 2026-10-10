@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- 柔和阴影 -->
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3748" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2D3748" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- 文字渐变 -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B3A4A"/>
+      <stop offset="100%" stop-color="#4A6178"/>
+    </linearGradient>
+
+    <!-- 颈圈金色渐变 -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+
+    <!-- 整体阴影滤镜 -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#2D3748" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- 纯白背景 -->
+
+  <!-- 顶部标题文字 GUANGZHOU -->
+  <g text-anchor="middle">
+    <text x="400" y="115" 
+          fill="url(#textGradient)" 
+          font-family="'Montserrat', 'Arial Black', -apple-system, sans-serif" 
+          font-size="64" 
+          font-weight="900" 
+          letter-spacing="10" 
+          opacity="0.95">GUANGZHOU</text>
+    
+    <!-- 装饰线条与小点 -->
+    <line x1="300" y1="140" x2="500" y2="140" stroke="#E8833A" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="400" cy="140" r="4" fill="#E8833A"/>
+  </g>
+
+  <!-- 放大版三花猫容器（动作：趴在温暖软垫上惬意打盹） -->
+  <g transform="translate(0, 10)" filter="url(#softShadow)">
+    
+    <!-- 软垫底座阴影 -->
+    <ellipse cx="400" cy="710" rx="320" ry="30" fill="url(#shadow)"/>
+
+    <!-- 温暖软垫（垫子加大加厚，增添温馨感） -->
+    <g>
+      <rect x="120" y="520" width="560" height="180" rx="40" fill="#FFF2E2" stroke="#EAD5C3" stroke-width="4"/>
+      <!-- 软垫褶皱与图案印花 -->
+      <path d="M 160 520 C 200 550, 200 670, 160 700" fill="none" stroke="#EAD5C3" stroke-width="2" stroke-dasharray="6,6"/>
+      <path d="M 640 520 C 600 550, 600 670, 640 700" fill="none" stroke="#EAD5C3" stroke-width="2" stroke-dasharray="6,6"/>
+      <path d="M 220 610 Q 400 640 580 610" fill="none" stroke="#EAD5C3" stroke-width="3" opacity="0.7"/>
+      
+      <!-- 软垫四角小棉花印花装饰 -->
+      <circle cx="170" cy="550" r="8" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="630" cy="550" r="8" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="170" cy="670" r="8" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="630" cy="670" r="8" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- 尾巴 (惬意地贴着垫子卷曲在身后) -->
+    <path d="M 560 560 C 660 550, 710 460, 670 390 C 640 340, 580 370, 600 410 C 620 450, 610 490, 530 520" 
+          fill="none" 
+          stroke="#FFF8F0" 
+          stroke-width="42" 
+          stroke-linecap="round"/>
+    <!-- 尾巴斑块 -->
+    <path d="M 590 550 C 670 530, 690 440, 650 390" fill="none" stroke="#2A2E33" stroke-width="40" stroke-linecap="round"/>
+    <path d="M 645 380 C 620 350, 590 370, 600 410" fill="none" stroke="#E8833A" stroke-width="40" stroke-linecap="round"/>
+
+    <!-- 猫咪主体 (大比例趴卧身躯，突出滚圆可爱感) -->
+    <path d="M 180 570 C 160 440, 260 360, 400 360 C 540 360, 640 440, 620 570 C 610 610, 560 620, 400 620 C 240 620, 190 610, 180 570 Z" 
+          fill="#FFF8F0"/>
+
+    <!-- 身体斑块 (三花特有分布) -->
+    <!-- 左侧橘色大斑块 -->
+    <path d="M 190 540 C 180 460, 250 380, 310 400 C 270 480, 260 560, 210 580 Z" fill="#E8833A"/>
+    <!-- 右侧黑色斑块 -->
+    <path d="M 610 540 C 620 460, 550 380, 490 400 C 530 480, 540 560, 590 580 Z" fill="#2A2E33"/>
+
+    <!-- 趴着的前爪 (两只山竹般的小白爪叠在胸前) -->
+    <ellipse cx="330" cy="580" rx="45" ry="25" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <ellipse cx="470" cy="580" rx="45" ry="25" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <!-- 爪子线条细节 -->
+    <path d="M 320 590 L 320 600 M 335 592 L 335 602 M 350 590 L 350 600" stroke="#EAD5C3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 480 590 L 480 600 M 465 592 L 465 602 M 450 590 L 450 600" stroke="#EAD5C3" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 红色项圈与大金铃铛 -->
+    <path d="M 280 430 Q 400 470 520 430" fill="none" stroke="#C0392B" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="400" cy="460" r="18" fill="url(#goldGradient)"/>
+    <circle cx="400" cy="464" r="4" fill="#8B572A"/>
+
+    <!-- 超大圆润猫头 (极大化比例，凸显超级萌感) -->
+    <g transform="translate(0, 30)">
+      
+      <!-- 左耳朵 (橘色) -->
+      <path d="M 240 250 L 160 90 C 145 60, 185 55, 220 85 L 310 190 Z" fill="#E8833A"/>
+      <path d="M 230 240 L 180 105 C 170 90, 190 85, 210 100 L 290 190 Z" fill="#FFB7B2" opacity="0.85"/>
+      
+      <!-- 右耳朵 (黑灰色) -->
+      <path d="M 560 250 L 640 90 C 655 60, 615 55, 580 85 L 490 190 Z" fill="#2A2E33"/>
+      <path d="M 570 240 L 620 105 C 630 90, 610 85, 590 100 L 510 190 Z" fill="#FFB7B2" opacity="0.85"/>
+
+      <!-- 大圆脸底色 (白色) -->
+      <ellipse cx="400" cy="270" rx="170" ry="135" fill="#FFF8F0"/>
+
+      <!-- 脸部经典三花斑块 -->
+      <path d="M 235 230 C 220 150, 310 140, 340 200 C 300 250, 250 260, 235 230 Z" fill="#2A2E33"/>
+      <path d="M 565 230 C 580 150, 490 140, 460 200 C 500 250, 550 260, 565 230 Z" fill="#E8833A"/>
+
+      <!-- 睡得非常香甜的弧形笑眼 (⌒ ⌒) -->
+      <path d="M 290 260 Q 330 295 360 260" fill="none" stroke="#2A2E33" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 510 260 Q 470 295 440 260" fill="none" stroke="#2A2E33" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- 鼓鼓的粉嫩大腮红 -->
+      <ellipse cx="280" cy="295" rx="26" ry="15" fill="#FF8A8A" opacity="0.5"/>
+      <ellipse cx="520" cy="295" rx="26" ry="15" fill="#FF8A8A" opacity="0.5"/>
+
+      <!-- 小巧粉红鼻子 -->
+      <polygon points="390,270 410,270 400,280" fill="#FF9EAA"/>
+
+      <!-- 满足微笑的小嘴巴 (ω) -->
+      <path d="M 370 292 Q 385 306 400 292 Q 415 306 430 292" fill="none" stroke="#2A2E33" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- 翘翘的俏皮胡须 -->
+      <g stroke="#2A2E33" stroke-width="3" stroke-linecap="round" opacity="0.75">
+        <path d="M 270 280 L 140 255"/>
+        <path d="M 265 295 L 130 295"/>
+        <path d="M 270 310 L 150 330"/>
+        <path d="M 530 280 L 660 255"/>
+        <path d="M 535 295 L 670 295"/>
+        <path d="M 530 310 L 650 330"/>
+      </g>
+    </g>
+
+    <!-- 呼呼大睡气泡/惬意符号 -->
+    <g fill="#A0AEC0" font-family="Arial, sans-serif" font-weight="bold" opacity="0.8">
+      <text x="580" y="160" font-size="38" transform="rotate(10 580 160)">Z</text>
+      <text x="625" y="115" font-size="28" transform="rotate(15 625 115)">z</text>
+      <text x="655" y="80" font-size="20" transform="rotate(5 655 80)">z</text>
+    </g>
+  </g>
+</svg>
