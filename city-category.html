@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bella's personal city list." />
+    <title>Bella's City List</title>
+    <link rel="icon" href="favicon.ico?v=1" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+  </head>
+  <body class="category-page city-category-page">
+    <main id="top">
+      <a class="category-back-link" href="index.html">← Bella's City List</a>
+      <p id="local-preview-notice" class="local-preview-notice" hidden></p>
+      <div id="collections"></div>
+      <script>
+        (() => {
+          const names = { shenzhen: 'Shenzhen', guangzhou: 'Guangzhou' };
+          const cityKey = new URLSearchParams(window.location.search).get('city');
+          const cityName = names[cityKey] || 'City';
+          const backLink = document.querySelector('.category-back-link');
+          backLink.href = names[cityKey] ? `${cityKey}.html` : 'index.html';
+          backLink.textContent = `← Bella's ${cityName} List`;
+          backLink.setAttribute('aria-label', `Back to Bella's ${cityName} List`);
+          if (window.location.protocol === 'file:') {
+            const notice = document.querySelector('#local-preview-notice');
+            notice.hidden = false;
+            notice.textContent = '请通过本地网页服务器打开此页面，地点卡片才能加载。';
+          }
+        })();
+      </script>
+      <script type="module" src="city-category.js?v=12"></script>
+    </main>
+  </body>
+</html>

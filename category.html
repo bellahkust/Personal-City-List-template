@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bella 在香港的私人收藏。" />
+    <title>Bella's List in Hong Kong</title>
+    <link rel="icon" href="favicon.ico?v=1" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=19" />
+  </head>
+  <body class="category-page">
+    <main id="top">
+      <a class="category-back-link" href="hong-kong.html" aria-label="Back to Bella's Hong Kong List">← Bella's Hong Kong List</a>
+      <p id="local-preview-notice" class="local-preview-notice" hidden></p>
+      <div id="collections"></div>
+      <script>
+        if (window.location.protocol === 'file:') {
+          const notice = document.querySelector('#local-preview-notice');
+          notice.hidden = false;
+          notice.textContent = '请通过本地网页服务器打开此页面，地点卡片才能加载。';
+        }
+      </script>
+      <script type="module" src="app.js?v=18"></script>
+    </main>
+  </body>
+</html>

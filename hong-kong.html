@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bella's personal collection of places to eat, drink, and be alone in Hong Kong." />
+    <title>Bella's List in Hong Kong</title>
+    <link rel="icon" href="favicon.ico?v=1" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+    <script type="module" src="app.js?v=16"></script>
+  </head>
+  <body class="city-list-page" data-city-key="hong-kong">
+    <main id="top">
+      <a class="list-back-link" href="index.html" aria-label="Back to Bella's List">← Bella's List</a>
+      <section class="intro intro-home" aria-labelledby="page-title">
+        <div class="home-content">
+          <p class="home-kicker">A personal map of Hong Kong</p>
+          <h1 id="page-title">Bella's List<br /><em>in Hong Kong</em></h1>
+          <nav class="section-links" aria-label="Hong Kong list categories">
+            <a href="category.html?category=food">Eat Well</a>
+            <a href="category.html?category=drinks">Drink Well</a>
+            <a href="category.html?category=alone">Stay Alone</a>
+          </nav>
+        </div>
+        <div class="home-visual city-square-visual">
+          <img src="assets/hong-kong-gemini.svg" alt="A cheerful calico cat illustration for Hong Kong" />
+        </div>
+      </section>
+      <div id="collections"></div>
+    </main>
+    <script type="module" src="city-landing.js?v=1"></script>
+  </body>
+</html>
