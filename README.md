@@ -1,4 +1,4 @@
-# Bella's List
+# Personal List
 
 A personal city-guide website template for collecting favorite restaurants, drinks, and places to spend time alone. It is a static site: each owner publishes their own Google Sheet as CSV, and visitors open a place card in Google Maps.
 
